@@ -1,0 +1,19 @@
+.contactMe-wrapper {
+  background-color: #1b101a;
+  height: 250px;
+  color: #f9fce9;
+  display: flex;
+  align-items: center;
+}
+
+.contactMe-wrapper button {
+  font-weight: bold;
+  border: 2px solid #f9fce9;
+  color: #f9fce9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.contactMe-wrapper button:hover {
+  border: 1px solid #f9fce9;
+  color: #f9fce9;
+  padding: 16px;
+}
