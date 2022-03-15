@@ -1,0 +1,15 @@
+.footer-wrapper {
+  background-color: #1b101a !important;
+  color: #f9fce9;
+}
+
+.footer-wrapper p {
+  color: rgba(249, 252, 233, 0.5);
+}
+
+.footer-wrapper a {
+  color: #cfd5c4 !important;
+}
+.footer-wrapper a:hover {
+  color: rgba(249, 252, 233) !important;
+}
