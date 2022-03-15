@@ -7,11 +7,11 @@ import "./Showcase.css";
 
 const Showcase = () => {
   return (
-    <Row className="showcase-wrapper">
-      <Col md="5">
+    <div className="showcase-wrapper">
+      <div className="showcase-col-left">
         <img className="showcase-image" src={ShowcaseImage} />
-      </Col>
-      <Col md="7" className="p-4 showcase-content-wrapper">
+      </div>
+      <div className="p-4 showcase-content-wrapper showcase-col-right">
         <div className="showcase-content">
           <div>
             <h5 style={{ color: "rgba(0, 0, 0, 0.75)" }}>
@@ -30,8 +30,8 @@ const Showcase = () => {
             <button>Learn More</button>
           </div>
         </div>
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 };
 export default Showcase;

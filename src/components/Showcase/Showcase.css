@@ -1,5 +1,6 @@
 .showcase-wrapper {
   background-color: #a0b19d;
+  display: flex;
 }
 .showcase-image {
   width: 100%;
@@ -43,6 +44,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.showcase-col-left {
+  width: 50%;
+}
+.showcase-col-right {
+  width: 50%;
 }
 
 @media screen and (min-width: 1400px) {
