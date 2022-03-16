@@ -8,10 +8,27 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <Container>
-        <Row>Footer row (top)</Row>
-        <Row>
-          <a>Footer row (bottom)</a>
-        </Row>
+        <div className="footer-top-wrapper">
+          <p>
+            <span>Copyright © 2022</span> · Andrew J Fleming
+          </p>
+        </div>
+        <div className="footer-bottom-wrapper">
+          <ul className="footer-list">
+            <li className="footer-list-item">
+              <Link>Home</Link>
+            </li>
+            <li className="footer-list-item">
+              <Link>Portfolio</Link>
+            </li>
+            <li className="footer-list-item">
+              <Link>About</Link>
+            </li>
+            <li className="footer-list-item">
+              <Link>Contact</Link>
+            </li>
+          </ul>
+        </div>
       </Container>
     </div>
   );

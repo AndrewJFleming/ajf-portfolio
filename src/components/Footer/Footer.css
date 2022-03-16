@@ -1,4 +1,5 @@
 .footer-wrapper {
+  padding: 2rem;
   background-color: #1b101a !important;
   color: #f9fce9;
 }
@@ -12,4 +13,25 @@
 }
 .footer-wrapper a:hover {
   color: rgba(249, 252, 233) !important;
+}
+
+.footer-top-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+}
+
+.footer-list {
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer-list-item {
+  list-style: none;
+  padding: 0 5px;
+  display: inline-block;
 }

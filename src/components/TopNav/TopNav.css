@@ -3,9 +3,28 @@
   color: #f9fce9;
 }
 
-.navbar a {
+.nav-link {
   color: #f9fce9;
 }
-.navbar a:hover {
+.nav-link:hover {
   color: #e6d889 !important;
+}
+
+.dropdown-menu {
+  background-color: #f9fce9 !important;
+}
+.dropdown-divider {
+  border-top: 1px solid #e4e7d5;
+}
+
+.dropdown-item {
+  color: #212529 !important;
+}
+.dropdown-item:hover {
+  color: #000 !important;
+  background-color: #e4e7d5 !important;
+}
+
+.bold-item {
+  font-weight: 600;
 }
