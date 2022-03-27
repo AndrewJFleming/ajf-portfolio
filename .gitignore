@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/images/development images
-src/images/project-thumbs
+src/assets/images/development images
+src/assets/images/project-thumbs
+src/assets/images/illust
