@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-import {
-  Container,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-} from "react-bootstrap";
-import NavLogo from "../../images/ajf-logo.png";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import NavLogo from "../../assets/images/ajf-logo.png";
 import "./TopNav.css";
 
 const TopNav = () => {
@@ -21,7 +15,6 @@ const TopNav = () => {
 
   return (
     <Navbar expanded={expanded} collapseOnSelect variant="dark" expand="lg">
-      {/* <Container> */}
       <Navbar.Brand
         as={Link}
         to="/"
@@ -42,22 +35,25 @@ const TopNav = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">
+            <NavDropdown.Item as={HashLink} to="/#mern">
               <span className="bold-item">MERN Projects</span>
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              React Projects
+            <NavDropdown.Item as={HashLink} to="/#react">
+              React.js Projects
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.3">
+            <NavDropdown.Item as={HashLink} to="/#wp">
               WP Custom Themes
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#link">About</Nav.Link>
-          <Nav.Link href="#link">Contact</Nav.Link>
+          <Nav.Link as={Link} to="/about">
+            About
+          </Nav.Link>
+          <Nav.Link as={Link} to="/contact">
+            Contact
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      {/* </Container> */}
     </Navbar>
   );
 };
