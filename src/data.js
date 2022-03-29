@@ -43,14 +43,17 @@ export const projectRows = [
         demo: "https://embossed-react-ecommerce.netlify.app/#/",
         screenshots: [
           {
+            id: "ks5FNa",
             img: "https://live.staticflickr.com/65535/51949490275_e842e935f2_o.png",
             caption: "",
           },
           {
+            id: "IO2cgr",
             img: "https://live.staticflickr.com/65535/51948958498_b5cb07a1d9_o.png",
             caption: "",
           },
           {
+            id: "iSMLLE",
             img: "https://live.staticflickr.com/65535/51949490295_25ed5a3698_o.png",
             caption: "",
           },
@@ -69,10 +72,12 @@ export const projectRows = [
         demo: "https://critique-me.netlify.app/posts",
         screenshots: [
           {
+            id: "HWt1O5",
             img: "https://live.staticflickr.com/65535/51948958373_1fbd9a1a76_o.png",
             caption: "",
           },
           {
+            id: "XNbntR",
             img: "https://live.staticflickr.com/65535/51949490100_f4768181e5_o.png",
             caption: "",
           },
@@ -91,18 +96,22 @@ export const projectRows = [
         demo: "https://purgation-react-blog.netlify.app/",
         screenshots: [
           {
+            id: "YCnKs3",
             img: "https://live.staticflickr.com/65535/51949490165_337c94e624_o.png",
             caption: "",
           },
           {
+            id: "EOI7U8",
             img: "https://live.staticflickr.com/65535/51949490135_df556f6db3_o.png",
             caption: "",
           },
           {
+            id: "mwhWEi",
             img: "https://live.staticflickr.com/65535/51949490120_e38ca7efd9_o.png",
             caption: "",
           },
           {
+            id: "gZ6zbJ",
             img: "https://live.staticflickr.com/65535/51948958403_4afd6cf822_o.png",
             caption: "",
           },
@@ -130,21 +139,25 @@ export const projectRows = [
         demo: "https://embossed-react-ecommerce-admin.netlify.app/",
         screenshots: [
           {
+            id: "SGDpag",
             img: "https://live.staticflickr.com/65535/51950845594_e193e2a845_o.png",
             caption:
               "Admin homepage displaying latest user data added, currently active sales and the history of created carts.",
           },
           {
+            id: "fVngY6",
             img: "https://live.staticflickr.com/65535/51950612863_da585b6223_o.png",
             caption:
               "Ecommerce data table example (listing out product data in this example).",
           },
           {
+            id: "GqHL4u",
             img: "https://live.staticflickr.com/65535/51949556252_91f0a2d71a_o.png",
             caption:
               "Create document page example (displaying the new product in this example).",
           },
           {
+            id: "pr2vbj",
             img: "https://live.staticflickr.com/65535/51949556302_b775d57d43_o.png",
             caption:
               "Edit cart page where admins can manage the products belonging to a particular cart.",
@@ -164,18 +177,22 @@ export const projectRows = [
         demo: "",
         screenshots: [
           {
+            id: "2N0gG9",
             img: "https://live.staticflickr.com/65535/51950523721_6cc5cf46d0_o.jpg",
             caption: "",
           },
           {
+            id: "OGeaPL",
             img: "https://live.staticflickr.com/65535/51950600548_650b1a492a_o.jpg",
             caption: "",
           },
           {
+            id: "8WopCb",
             img: "https://live.staticflickr.com/65535/51950523706_4a83593281_o.jpg",
             caption: "",
           },
           {
+            id: "vqLWV1",
             img: "https://live.staticflickr.com/65535/51949543857_8de00ca5b1_o.jpg",
             caption: "",
           },
@@ -195,6 +212,7 @@ export const projectRows = [
         demo: "http://janekfleming.com/",
         screenshots: [
           {
+            id: "ZukUer",
             img: "https://live.staticflickr.com/65535/51949556222_79029d73c5_o.png",
             caption: "",
           },
@@ -225,26 +243,32 @@ export const projectRows = [
         related: [],
         screenshots: [
           {
+            id: "kT7lPD",
             img: "https://live.staticflickr.com/65535/51951130450_52c75bb4bd_o.png",
             caption: "",
           },
           {
+            id: "qpn1bI",
             img: "https://live.staticflickr.com/65535/51950600593_20ff696d98_o.png",
             caption: "",
           },
           {
+            id: "O1nNVN",
             img: "https://live.staticflickr.com/65535/51950832924_279a756d15_o.png",
             caption: "",
           },
           {
+            id: "Qkn4Ie",
             img: "https://live.staticflickr.com/65535/51950833034_798d237c00_o.png",
             caption: "",
           },
           {
+            id: "yyxbyI",
             img: "https://live.staticflickr.com/65535/51949543947_354c01830a_o.png",
             caption: "",
           },
           {
+            id: "ZMDFFW",
             img: "https://live.staticflickr.com/65535/51950832954_b801713339_o.png",
             caption: "",
           },
@@ -263,18 +287,22 @@ export const projectRows = [
         demo: "https://amandasargentartist.com/",
         screenshots: [
           {
+            id: "z1vaFY",
             img: "https://live.staticflickr.com/65535/51950832809_964c295a1f_o.png",
             caption: "",
           },
           {
+            id: "HxTZkL",
             img: "https://live.staticflickr.com/65535/51950832779_99fc12d487_o.png",
             caption: "",
           },
           {
+            id: "vboU6Y",
             img: "https://live.staticflickr.com/65535/51949543987_e35e26bf54_o.png",
             caption: "",
           },
           {
+            id: "Lm0yRg",
             img: "https://live.staticflickr.com/65535/51950523676_cc8d28b280_o.png",
             caption: "",
           },
@@ -297,9 +325,9 @@ export const faqItems = [
     question: "What kinds of apps/sites do you have experience with?",
     answer: "I’ve built the following kinds of sites from scratch:",
     list: [
-      "Artist portfolio sites",
-      "Blogs (custom WP themes and React.js web app)",
-      "Ecommerce web apps",
+      { id: "li1", content: "Artist portfolio sites" },
+      { id: "li2", content: "Blogs (custom WP themes and React.js web app)" },
+      { id: "li3", content: "Ecommerce web apps" },
     ],
     isDefaultOpen: true,
   },

@@ -3,12 +3,16 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Project from "./Project/Project";
 
-import "./ProjectRow.css";
-
-const ProjectRow = ({ rowTitle, rowDesc, rowProjects, includeDivider }) => {
+const ProjectRow = ({
+  rowTitle,
+  rowType,
+  rowDesc,
+  rowProjects,
+  includeDivider,
+}) => {
   return (
     <React.Fragment>
-      <Row className="pt-5">
+      <Row id={rowType} className="pt-4 pb-2">
         <Col className="text-center">
           <h3>{rowTitle}</h3>
           <p>{rowDesc}</p>
