@@ -2,6 +2,18 @@
   background-color: #a0b19d;
   display: flex;
 }
+.showcase-wrapper h2,
+.showcase-wrapper p {
+  font-weight: bold;
+}
+.showcase-wrapper button {
+  border: none;
+  background-color: #e6d889;
+}
+
+.showcase-image-wrapper {
+  width: 50%;
+}
 .showcase-image {
   width: 100%;
   height: 100%;
@@ -9,21 +21,13 @@
   padding: 0;
   margin: 0;
 }
-.showcase-wrapper button {
-  border: none;
-  background-color: #e6d889;
-}
 
-.showcase-wrapper h2,
-.showcase-wrapper p {
-  font-weight: bold;
-}
-
-.showcase-content-wrapper {
+.showcase-info-wrapper {
   position: relative;
+  width: 50%;
 }
 
-.showcase-content-wrapper:before {
+.showcase-info-wrapper:before {
   content: " ";
   display: block;
   position: absolute;
@@ -34,11 +38,10 @@
   opacity: 0.07;
   background-image: url(https://gist.githubusercontent.com/AndrewJFleming/a3d9a8d814dda79cc6b3ac7a70453dc1/raw/824a09b4d7c2492bac238ca79f7caa79825dd83b/illust-7.svg);
   background-repeat: no-repeat;
-  /* background-position: 50% 0; */
   background-size: cover;
 }
 
-.showcase-content {
+.showcase-info {
   position: relative;
   height: 100%;
   display: flex;
@@ -46,15 +49,27 @@
   justify-content: space-around;
 }
 
-.showcase-col-left {
-  width: 50%;
-}
-.showcase-col-right {
-  width: 50%;
+/*
+Limit p width on widest screens.
+*/
+@media screen and (min-width: 1400px) {
+  .showcase-info p {
+    max-width: 75%;
+  }
 }
 
-@media screen and (min-width: 1400px) {
-  .showcase-content p {
-    max-width: 75%;
+/*
+Hide showcase image col on mobile screens.
+*/
+@media screen and (max-width: 767px) {
+  .showcase-image-wrapper {
+    display: none;
+  }
+
+  /*
+  Allow full p width on smaller screens.
+  */
+  .showcase-info-wrapper {
+    width: 100%;
   }
 }

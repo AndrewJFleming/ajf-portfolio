@@ -1,18 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { Container, Row, Col } from "react-bootstrap";
-import ShowcaseImage from "../../images/showcase-rock.png";
+import ShowcaseImage from "../../assets/images/showcase-rock.png";
 
 import "./Showcase.css";
 
 const Showcase = () => {
   return (
     <div className="showcase-wrapper">
-      <div className="showcase-col-left">
+      <div className="showcase-image-wrapper">
         <img className="showcase-image" src={ShowcaseImage} />
       </div>
-      <div className="p-4 showcase-content-wrapper showcase-col-right">
-        <div className="showcase-content">
+      <div className="p-4 showcase-info-wrapper">
+        <div className="showcase-info">
           <div>
             <h5 style={{ color: "rgba(0, 0, 0, 0.75)" }}>
               Seattle-based Freelancer
@@ -27,7 +27,9 @@ const Showcase = () => {
             functionality.
           </p>
           <div>
-            <button>Learn More</button>
+            <Link to="/about">
+              <button>Learn More</button>
+            </Link>
           </div>
         </div>
       </div>
