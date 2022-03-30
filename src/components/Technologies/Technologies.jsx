@@ -1,10 +1,9 @@
 import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
-import { technologies } from "../../data.js";
-
-import "./Technologies.css";
 import Technology from "./Technology/Technology";
+import { technologies } from "../../data.js";
+import "./Technologies.css";
 
 const Technologies = () => {
   return (
@@ -21,7 +20,7 @@ const Technologies = () => {
           </Col>
         </Row>
         <Row>
-          {technologies.map((tech, index) => (
+          {technologies.map((tech) => (
             <Technology key={tech.id} technology={tech} />
           ))}
         </Row>
