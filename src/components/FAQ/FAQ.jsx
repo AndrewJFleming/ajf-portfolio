@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
-import Portrait from "../../images/portrait.png";
-import { faqItems } from "../../data.js";
-
-import "./FAQ.css";
+import Portrait from "../../assets/images/portrait.png";
 import FAQItem from "./FAQItem/FAQItem";
+import { faqItems } from "../../data.js";
+import "./FAQ.css";
 
 const FAQ = () => {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <div className="faq-content-wrapper">
       <Container className="py-5">
@@ -21,11 +18,12 @@ const FAQ = () => {
                 answer={item.answer}
                 answerList={item?.list}
                 defaultSetting={item.isDefaultOpen}
+                key={item.id}
               />
             ))}
           </Col>
-          <Col md="4" className="text-center">
-            <img width="100%" src={Portrait} />
+          <Col md="4" className="text-center faq-image-col">
+            <img width="100%" src={Portrait} alt="faq side portrait" />
           </Col>
         </Row>
       </Container>
