@@ -1,19 +1,31 @@
 .contactMe-wrapper {
-  background-color: #1b101a;
-  height: 250px;
-  color: #f9fce9;
   display: flex;
+  background-color: #1b101a;
+  color: #f9fce9;
+  height: 250px;
   align-items: center;
 }
 
 .contactMe-wrapper button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f9fce9;
   font-weight: bold;
   border: 2px solid #f9fce9;
-  color: #f9fce9;
-  background-color: rgba(0, 0, 0, 0);
 }
 .contactMe-wrapper button:hover {
   border: 1px solid #f9fce9;
   color: #f9fce9;
-  padding: 16px;
+}
+
+.contact-cta {
+  margin: auto 0;
+}
+.contact-cta h2 {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-cta h2 {
+    margin-bottom: 2rem;
+  }
 }
