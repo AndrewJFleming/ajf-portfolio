@@ -1,0 +1,15 @@
+.about-page-index {
+  position: sticky;
+  top: 126px;
+}
+.about-page-index a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .about-page-index {
+    position: relative;
+    top: 0;
+    padding-bottom: 3rem;
+  }
+}

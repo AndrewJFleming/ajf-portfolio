@@ -1,0 +1,24 @@
+.about-page-wrapper {
+  margin-top: 50px;
+}
+.about-page-wrapper a {
+  text-decoration: underline;
+}
+.about-page-wrapper a:hover {
+  text-decoration: none;
+}
+
+.about-portrait {
+  max-width: 200px;
+  float: right;
+  padding-left: 20px;
+}
+
+.about-page-section {
+  padding: 1rem 0;
+}
+
+.clear-floats {
+  padding-top: 1rem;
+  clear: both;
+}
