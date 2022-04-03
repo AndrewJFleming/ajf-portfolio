@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Source Sans Pro", sans-serif;
+  color: #212529;
   background-color: #fafceb;
 }
 
@@ -28,11 +29,9 @@ body {
 
 .app-content {
   position: relative;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1,
@@ -51,6 +50,10 @@ h6 {
 
 a {
   cursor: pointer;
+  color: #922220;
+}
+a:hover {
+  color: #212529;
 }
 
 button {
