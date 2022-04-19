@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Row, Col } from "react-bootstrap";
-import Project from "./Project/Project";
+import FeaturedProject from "./FeaturedProject/FeaturedProject";
 
 const ProjectRow = ({
   rowTitle,
@@ -22,7 +22,7 @@ const ProjectRow = ({
         {rowProjects
           .filter((p) => p.isFeatured)
           .map((p) => (
-            <Project key={p.id} project={p} />
+            <FeaturedProject key={p.id} project={p} />
           ))}
       </Row>
       {includeDivider && <hr />}

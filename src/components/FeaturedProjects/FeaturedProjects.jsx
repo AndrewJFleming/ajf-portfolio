@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container } from "react-bootstrap";
 import { projectRows } from "../../data.js";
-import ProjectRow from "./ProjectRow/ProjectRow.jsx";
+import FeaturedProjectRow from "./FeaturedProjectRow/FeaturedProjectRow.jsx";
 
 const Projects = () => {
   //Exclude the <hr/> element in the final ProjectRow component of the processedRows array.
@@ -20,7 +20,7 @@ const Projects = () => {
     <div className="projects-wrapper pt-2 pb-5">
       <Container>
         {processedRows.map((r) => (
-          <ProjectRow
+          <FeaturedProjectRow
             rowTitle={r.title}
             rowType={r.type}
             rowDesc={r.desc}

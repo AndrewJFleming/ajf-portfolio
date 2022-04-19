@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ContactMe from "../../components/ContactMe/ContactMe";
 import FAQ from "../../components/FAQ/FAQ";
-import Projects from "../../components/Projects/Projects";
+import FeaturedProjects from "../../components/FeaturedProjects/FeaturedProjects";
 import Showcase from "../../components/Showcase/Showcase";
 import Technologies from "../../components/Technologies/Technologies";
 
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <Showcase />
       <Technologies />
-      <Projects />
+      <FeaturedProjects />
       <ContactMe />
       <FAQ />
     </div>

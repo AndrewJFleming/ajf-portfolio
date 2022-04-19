@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Col } from "react-bootstrap";
-import "./Project.css";
+import "./FeaturedProject.css";
 
 const Project = ({ project }) => {
   return (
