@@ -1,0 +1,18 @@
+.portfolio-category-wrapper {
+    margin-top: 2rem;
+}
+
+.project-row-header {
+padding-bottom: 1rem;
+}
+.portfolio-item-title {
+    text-align: center;
+    font-size: 18px;
+}
+.portfolio-item-image-wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.portfolio-item-image-wrapper img {
+    height: 100px;
+}
