@@ -7,6 +7,8 @@ import TopNav from "./components/TopNav/TopNav";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import SingleProject from "./pages/SingleProject/SingleProject";
+import Portfolio from "./pages/About/Portfolio/Portfolio";
+import SingleCategory from "./pages/SingleCategory/SingleCategory";
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/categories/:categorySlug">
+              <SingleCategory />
             </Route>
             <Route path="/projects/:projectSlug">
               <SingleProject />
