@@ -133,7 +133,7 @@ export const projectRows = [
         id: "p4",
         title: "Embossed Dummy Data Admin",
         brief:
-          "This is a version of the Embossed admin app (the project above) that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
+          "This is a version of the Embossed admin app that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
         fullDesc: "",
         img: "https://live.staticflickr.com/65535/51939860362_cec01912ae_o.png",
         type: "react",
