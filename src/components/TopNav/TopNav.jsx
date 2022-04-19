@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+import { projectRows } from "../../data.js";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import NavLogo from "../../assets/images/ajf-logo.png";
 import "./TopNav.css";
@@ -34,15 +35,28 @@ const TopNav = () => {
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-            <NavDropdown.Item as={HashLink} to="/#mern">
-              <span className="bold-item">MERN Projects</span>
-            </NavDropdown.Item>
-            <NavDropdown.Item as={HashLink} to="/#react">
-              React.js Projects
-            </NavDropdown.Item>
+          <Nav.Link as={Link} to="/portfolio">
+            All Projects
+          </Nav.Link>
+          <NavDropdown title="Portfolio Categories" id="basic-nav-dropdown">
+            {projectRows
+              .filter((projectRow) => projectRow.type !== "wp")
+              .map((filteredProjectRow) => (
+                <NavDropdown.Item
+                  as={Link}
+                  to={`/categories/${filteredProjectRow.type}`}
+                >
+                  <span
+                    className={`${
+                      filteredProjectRow.type === "mern" && "bold-item"
+                    }`}
+                  >
+                    {filteredProjectRow.title}
+                  </span>
+                </NavDropdown.Item>
+              ))}
             <NavDropdown.Divider />
-            <NavDropdown.Item as={HashLink} to="/#wp">
+            <NavDropdown.Item as={Link} to="/categories/wp">
               WP Custom Themes
             </NavDropdown.Item>
           </NavDropdown>

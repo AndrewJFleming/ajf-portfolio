@@ -19,9 +19,11 @@ const ProjectRow = ({
         </Col>
       </Row>
       <Row className="justify-content-center">
-        {rowProjects.map((p) => (
-          <Project key={p.id} project={p} />
-        ))}
+        {rowProjects
+          .filter((p) => p.isFeatured)
+          .map((p) => (
+            <Project key={p.id} project={p} />
+          ))}
       </Row>
       {includeDivider && <hr />}
     </React.Fragment>
