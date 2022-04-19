@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import CategoryItem from "../../components/CategoryItem/CategoryItem.jsx";
+import PortfolioProjectRow from "../../components/PortfolioProjectRow/PortfolioProjectRow.jsx";
 import { projectRows } from "../../data.js";
 import { Container } from "react-bootstrap";
 
@@ -13,7 +13,7 @@ const SingleCategory = () => {
         {projectRows
           .filter((productRow) => productRow.type === categorySlug)
           .map((category) => (
-            <CategoryItem category={category} isPortfolio={false} />
+            <PortfolioProjectRow category={category} isSingleCategory={true} />
           ))}
       </Container>
     </div>
