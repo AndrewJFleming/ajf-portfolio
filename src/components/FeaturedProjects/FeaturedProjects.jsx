@@ -24,6 +24,7 @@ const Projects = () => {
             rowTitle={r.title}
             rowType={r.type}
             rowDesc={r.desc}
+            rowSlug={r.type}
             rowProjects={r.projects}
             includeDivider={r.hasDivider}
             key={r.id}

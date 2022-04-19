@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Col } from "react-bootstrap";
 import "./FeaturedProject.css";
 
-const Project = ({ project }) => {
+const FeaturedProject = ({ project }) => {
   return (
     <Col md="4" className="text-center project-item-col">
       <Link to={`/projects/${project.slug}`}>
@@ -17,4 +17,4 @@ const Project = ({ project }) => {
     </Col>
   );
 };
-export default Project;
+export default FeaturedProject;
