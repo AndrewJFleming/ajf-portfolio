@@ -24,14 +24,14 @@ export const technologies = [
 
 export const projectRows = [
   {
-    id: "pr1",
+    id: "LNCx7Z",
     title: "MERN Stack Project Highlights",
     desc: "I’ve built my most recent web apps using the MERN stack (MongoDB, Express.js, React.js and Node.js). These apps deliver all the features expected by user of the modern web; they feature create, read, update and delete functionality.",
     img: "https://raw.githubusercontent.com/AndrewJFleming/embossed-react-ecommerce/main/client/src/images/logo.png",
     type: "mern",
     projects: [
       {
-        id: "p1",
+        id: "QAP3zt",
         title: "Embossed React Ecommerce",
         brief:
           "The Embossed React Ecommerce app is an online shop app built with the MERN stack. The repo contains the client, admin and server directories for the project. Users can browse for and add products to carts and the admin dashboard is a fully CRUD app for managing the database.",
@@ -61,7 +61,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p2",
+        id: "OcQtEw",
         title: "CritiqueMe",
         brief:
           "CritiqueMe users can browse images posted by other artists and, if they've registered an account, can post critiques/comments. Registered users can also post their own images to the homepage to have them critiqued by other users.",
@@ -86,7 +86,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p3",
+        id: "wbMThR",
         title: "Purgation React Blog",
         brief:
           "Purgation is a blog built with the MERN stack where users can register an account and post articles. Only the original post creator can update or delete posts.",
@@ -123,17 +123,17 @@ export const projectRows = [
     ],
   },
   {
-    id: "pr2",
+    id: "59TYF8",
     title: "More React.js Projects",
     desc: "Explore more projects built using the React.js framework.",
     img: "https://raw.githubusercontent.com/AndrewJFleming/embossed-react-ecommerce/main/client/src/images/logo.png",
     type: "react",
     projects: [
       {
-        id: "p4",
+        id: "IuX0jd",
         title: "Embossed Dummy Data Admin",
         brief:
-          "This is a version of the Embossed admin app that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
+          "This is a version of the admin app included in <a href='https://andrewjfleming.com/projects/embossed-react-ecommerce'>Embossed React Ecommerce</a> that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
         fullDesc: "",
         img: "https://live.staticflickr.com/65535/51939860362_cec01912ae_o.png",
         type: "react",
@@ -169,7 +169,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p5",
+        id: "ctoKXm",
         title: "Portraits of Iowa",
         brief:
           "Public artist John Fleming commissioned a website for Portraits of Iowa, the winning project in a Cedar Rapids, Iowa, art installation competition. My client’s installation involved gathering hundreds of photo submissions from Cedar Rapids residents that would then be assembled into a hanging gallery/sculpture.",
@@ -204,7 +204,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p6",
+        id: "xD0fNS",
         title: "Jane Kazmier Counseling Site",
         brief:
           "Single page website built using React.js and the Materialize CSS library for Jane Kazmier’s Spiritual Direction practice.",
@@ -225,7 +225,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p7",
+        id: "kDbu9f",
         title: "Caprichos de Goya",
         brief:
           "Caprichos de Goya is a TypeScript conversion of the <a href='https://github.com/AndrewJFleming/80-caprichos'>80 Caprichos</a> React.js gallery app featuring Prints from Francisco Goya's <em>Los Caprichos</em> series.",
@@ -248,7 +248,7 @@ export const projectRows = [
     ],
   },
   {
-    id: "pr3",
+    id: "n6L7Kw",
     title: "Custom WordPress Themes",
     desc: "Explore custom WordPress themes designed for professional artists in Seattle, WA.",
     img: "https://raw.githubusercontent.com/AndrewJFleming/embossed-react-ecommerce/main/client/src/images/logo.png",
@@ -257,7 +257,7 @@ export const projectRows = [
     demo: "",
     projects: [
       {
-        id: "p8",
+        id: "du72H3",
         title: "John Fleming Portfolio Site",
         brief:
           "A custom WP theme designed to feature John Fleming's extensive art/architecture portfolio. Thumbnails are presented in a masonry style and single post pages use the Magnific Popup plugin to display associated gallery images.",
@@ -303,7 +303,7 @@ export const projectRows = [
         ],
       },
       {
-        id: "p9",
+        id: "fwmYmg",
         title: "Amanda Sargent Artist Portfolio",
         brief:
           "A custom WP theme designed to feature Amanda Sargent's art portfolio. Visitors can browse her portfolio by category and inquire about the price and availability of specific pieces by email.",
@@ -343,14 +343,14 @@ export const projectRows = [
 
 export const faqItems = [
   {
-    id: "q1",
+    id: "QIBahw",
     question: "Can I phone or email you?",
     answer:
       "You can reach me on my contact page or by calling me at 1.206.471.8342.",
     isDefaultOpen: true,
   },
   {
-    id: "q2",
+    id: "oOyP0B",
     question: "What kinds of apps/sites do you have experience with?",
     answer: "I’ve built the following kinds of sites from scratch:",
     list: [
@@ -361,7 +361,7 @@ export const faqItems = [
     isDefaultOpen: true,
   },
   {
-    id: "q3",
+    id: "HMWWU3",
     question:
       "Do you have experience with any global state management technologies?",
     answer:

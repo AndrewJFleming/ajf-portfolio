@@ -39,11 +39,15 @@ const SingleProject = () => {
 
             <Col md="8">
               <h2>{portfolioItem.title}</h2>
-              {portfolioItem.fullDesc ? (
-                <p>{portfolioItem.fullDesc}</p>
-              ) : (
-                <p>{portfolioItem.brief}</p>
-              )}
+
+              <p
+                className="brief-description"
+                dangerouslySetInnerHTML={{
+                  __html: portfolioItem.fullDesc
+                    ? portfolioItem.fullDesc
+                    : portfolioItem.brief,
+                }}
+              ></p>
 
               <div className="external-links-wrapper">
                 {portfolioItem.gitHub && (
