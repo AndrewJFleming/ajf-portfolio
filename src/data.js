@@ -227,9 +227,11 @@ export const projectRows = [
       {
         id: "p7",
         title: "Caprichos de Goya",
-        brief: "test brief",
-        fullDesc: "test full",
-        img: "https://live.staticflickr.com/65535/51940960503_179cd40f99_o.png",
+        brief:
+          "Caprichos de Goya is a TypeScript conversion of the <a href='https://github.com/AndrewJFleming/80-caprichos'>80 Caprichos</a> React.js gallery app featuring Prints from Francisco Goya's <em>Los Caprichos</em> series.",
+        fullDesc:
+          "Caprichos de Goya is a TypeScript conversion of the <a href='https://github.com/AndrewJFleming/80-caprichos'>80 Caprichos</a> React.js gallery app. The aim of these projects is to present high resolution scans of Goya's prints and to curate the collection by categorizing the pieces by the various themes repeated throughout.",
+        img: "https://live.staticflickr.com/65535/52016441321_e59d4f32bf_o.png",
         type: "react",
         isFeatured: false,
         slug: "caprichos-de-goya",
