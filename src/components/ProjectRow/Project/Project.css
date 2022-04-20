@@ -1,0 +1,47 @@
+.project-item-col img {
+  max-height: 180px;
+}
+
+.project-item-col a {
+  text-decoration: underline;
+  color: #212529;
+}
+.project-item-col a:hover {
+  text-decoration: none;
+}
+
+/*
+Smaller project images only on Portfolio page.
+*/
+.portfolio-page-project p {
+  margin-top: 1rem;
+  font-size: 18px;
+  color: #922220;
+}
+.portfolio-page-project a {
+  text-decoration: none;
+}
+.portfolio-page-project a:hover {
+  text-decoration: underline;
+  color: #922220;
+}
+
+/*
+Smaller project images only on Portfolio page.
+*/
+.portfolio-page-project img {
+    height: 100px;
+
+}
+
+@media screen and (max-width: 991px) {
+  .project-item-col img {
+    max-height: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-item-col img {
+    max-height: 200px;
+  }
+}
