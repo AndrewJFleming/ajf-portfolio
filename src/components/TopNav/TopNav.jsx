@@ -48,7 +48,7 @@ const TopNav = () => {
                 >
                   <span
                     className={`${
-                      filteredProjectRow.type === "mern" && "bold-item"
+                      filteredProjectRow.type === "mern" ? "bold-item" : ""
                     }`}
                   >
                     {filteredProjectRow.title}
