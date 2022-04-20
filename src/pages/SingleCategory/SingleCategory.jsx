@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import PortfolioProjectRow from "../../components/PortfolioProjectRow/PortfolioProjectRow.jsx";
 import { projectRows } from "../../data.js";
 import { Container } from "react-bootstrap";
+import ProjectRow from "../../components/ProjectRow/ProjectRow.jsx";
 
 const SingleCategory = () => {
   const { categorySlug } = useParams();
@@ -12,8 +12,11 @@ const SingleCategory = () => {
       <Container>
         {projectRows
           .filter((productRow) => productRow.type === categorySlug)
-          .map((category) => (
-            <PortfolioProjectRow category={category} isSingleCategory={true} />
+          .map((projectRow) => (
+            <ProjectRow
+              projectRow={projectRow}
+              parentComponent="SingleCategory"
+            />
           ))}
       </Container>
     </div>
