@@ -13,8 +13,8 @@ const ProjectRow = ({ projectRow, parentComponent }) => {
         className="featured-projects-row-header-wrapper"
       >
         <div
-          className={`w-100 ${
-            parentComponent !== "Portfolio" ? "text-center" : ""
+          className={`${
+            parentComponent !== "Portfolio" ? "text-center w-100" : ""
           }`}
         >
           {parentComponent === "Portfolio" ? (
