@@ -1,6 +1,8 @@
 .faq-q-wrapper {
   background-color: rgba(187, 194, 173, 0.75);
   width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.25rem;
 }
 .faq-q-wrapper h6 {
   margin: 0;

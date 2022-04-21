@@ -50,7 +50,7 @@ const SingleProject = () => {
                 }}
               ></p>
 
-              <div className="external-links-wrapper">
+              <div className="external-links-wrapper mt-2">
                 {portfolioItem.gitHub && (
                   <a
                     className="github-external-link"
@@ -78,7 +78,7 @@ const SingleProject = () => {
                   xs="12"
                   sm="6"
                   md="6"
-                  lg="3"
+                  lg={portfolioItem.screenshots.length < 4 ? "4" : "3"}
                   key={screenshot.id}
                 >
                   <PopUp

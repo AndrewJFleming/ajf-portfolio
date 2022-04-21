@@ -6,7 +6,7 @@ const FAQItemQuestion = ({ question, expanded, setExpanded }) => {
   return (
     <div
       role="button"
-      className="faq-q-wrapper p-3 mb-1"
+      className="faq-q-wrapper"
       onClick={() => setExpanded(!expanded)}
     >
       <h6 className="sans-serif">
