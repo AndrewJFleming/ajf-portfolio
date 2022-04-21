@@ -15,13 +15,18 @@ const Project = ({ project, parentComponent }) => {
       <Link to={`/projects/${project.slug}`}>
         <img src={project.img} alt={`${project.title} project list thumb`} />
       </Link>
-      <Link to={`/projects/${project.slug}`}>
+      <Link className="project-title" to={`/projects/${project.slug}`}>
         {parentComponent === "Portfolio" ? (
           <p>{project.title}</p>
         ) : (
           <h3>{project.title}</h3>
         )}
       </Link>
+      <div className="external-links-wrapper">
+        {project.gitHub && <a href={project.gitHub}>GitHub</a>}
+        {project.gitHub && project.demo && <span> / </span>}
+        {project.demo && <a href={project.demo}>Website</a>}
+      </div>
       {parentComponent !== "Portfolio" && (
         <p
           className="brief-description"
