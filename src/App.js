@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
@@ -14,30 +14,22 @@ function App() {
   return (
     <div className="app-content-wrapper">
       <div className="app-content">
-        <Router>
-          <TopNav />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/categories/:categorySlug">
-              <SingleCategory />
-            </Route>
-            <Route path="/projects/:projectSlug">
-              <SingleProject />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
-          <Footer />
-        </Router>
+        <TopNav />
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/portfolio" element={<Portfolio />}></Route>
+          <Route
+            path="/categories/:categorySlug"
+            element={<SingleCategory />}
+          ></Route>
+          <Route
+            path="/projects/:projectSlug"
+            element={<SingleProject />}
+          ></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+        <Footer />
       </div>
     </div>
   );
