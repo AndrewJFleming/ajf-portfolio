@@ -10,6 +10,11 @@
   border: none;
   background-color: #e6d889;
 }
+.showcase-wrapper button:hover,
+.showcase-wrapper button:active {
+  border: 2px solid #3f3708;
+  padding: 13px;
+}
 
 .showcase-image-wrapper {
   width: 50%;

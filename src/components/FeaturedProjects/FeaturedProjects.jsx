@@ -6,7 +6,7 @@ import ProjectRow from "../ProjectRow/ProjectRow.jsx";
 
 const FeaturedProjects = () => {
   return (
-    <div className="pt-2 pb-5">
+    <div className="pt-2">
       <Container>
         {projectRows.map((projectRow) => (
           <ProjectRow

@@ -11,8 +11,12 @@
   text-decoration: underline;
 }
 
+.brief-description {
+  margin-bottom: 0;
+}
+
 /*
-Smaller project images only on Portfolio page.
+Portfolio page specific styles.
 */
 .portfolio-project-title {
   margin-top: 1rem;
@@ -30,27 +34,12 @@ Smaller project images only on Portfolio page.
 .portfolio-page-project-col .external-links-wrapper {
   font-size: 14px;
 }
-
-/*
-Smaller project images only on Portfolio page.
-*/
 .portfolio-page-project-col img {
     height: 100px;
-
-}
-
-.brief-description {
-  margin-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
   .project-item-col img {
     max-height: 130px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .project-item-col img {
-    max-height: 200px;
   }
 }
