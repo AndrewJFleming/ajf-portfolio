@@ -133,7 +133,7 @@ export const projectRows = [
         id: "IuX0jd",
         title: "Embossed Dummy Data Admin",
         brief:
-          "This is a version of the admin app included in <a href='https://andrewjfleming.com/projects/embossed-react-ecommerce'>Embossed React Ecommerce</a> that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
+          "This is a version of the admin app included in <a href='https://github.com/AndrewJFleming/embossed-react-ecommerce'>Embossed React Ecommerce</a> that uses dummy-data instead of MongoDB database data. There are no api requests in this version of the project.",
         fullDesc: "",
         img: "https://live.staticflickr.com/65535/51939860362_cec01912ae_o.png",
         type: "react",
@@ -178,8 +178,8 @@ export const projectRows = [
         type: "react",
         isFeatured: true,
         slug: "portraits-of-iowa",
-        gitHub: "",
-        demo: "",
+        gitHub: "https://github.com/AndrewJFleming/portraits-of-iowa",
+        demo: "https://portraits-of-iowa.netlify.app/",
         screenshots: [
           {
             id: "2N0gG9",
