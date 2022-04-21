@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 import PopUp from "./PopUp/PopUp.jsx";
@@ -9,8 +9,7 @@ import "./SingleProject.css";
 const SingleProject = () => {
   const [allProjects, setAllProjects] = useState([]);
   const [portfolioItem, setPortfolioItem] = useState({});
-  const location = useLocation();
-  const projectId = location.pathname.split("/")[2];
+  const { projectSlug } = useParams();
 
   useEffect(() => {
     //Merge projects arrays from array of projectRows into single array
@@ -22,7 +21,9 @@ const SingleProject = () => {
 
   useEffect(() => {
     //Identify project with slug value matching pathname slug.
-    setPortfolioItem(allProjects.find((project) => project.slug === projectId));
+    setPortfolioItem(
+      allProjects.find((project) => project.slug === projectSlug)
+    );
   }, [allProjects]);
 
   return (
