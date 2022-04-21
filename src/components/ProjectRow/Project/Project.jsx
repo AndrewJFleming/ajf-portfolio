@@ -7,21 +7,29 @@ import "./Project.css";
 const Project = ({ project, parentComponent }) => {
   return (
     <Col
+      xs={parentComponent === "Portfolio" ? "6" : "12"}
+      sm={parentComponent === "Portfolio" ? "4" : "6"}
       md={parentComponent === "Portfolio" ? "3" : "4"}
       className={`text-center project-item-col ${
-        parentComponent === "Portfolio" ? "portfolio-page-project" : ""
+        parentComponent === "Portfolio" ? "portfolio-page-project-col" : ""
       }`}
     >
       <Link to={`/projects/${project.slug}`}>
         <img src={project.img} alt={`${project.title} project list thumb`} />
       </Link>
-      <Link className="project-title" to={`/projects/${project.slug}`}>
-        {parentComponent === "Portfolio" ? (
-          <p>{project.title}</p>
-        ) : (
-          <h3>{project.title}</h3>
-        )}
-      </Link>
+      <br />
+      {parentComponent === "Portfolio" ? (
+        <Link
+          className="portfolio-project-title"
+          to={`/projects/${project.slug}`}
+        >
+          {project.title}
+        </Link>
+      ) : (
+        <Link className="serif-link-title" to={`/projects/${project.slug}`}>
+          {project.title}
+        </Link>
+      )}
       <div className="external-links-wrapper">
         {project.gitHub && <a href={project.gitHub}>GitHub</a>}
         {project.gitHub && project.demo && <span> / </span>}

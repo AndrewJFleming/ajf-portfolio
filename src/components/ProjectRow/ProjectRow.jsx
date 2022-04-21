@@ -8,31 +8,34 @@ import "./ProjectRow.css";
 const ProjectRow = ({ projectRow, parentComponent }) => {
   return (
     <React.Fragment>
-      <Row
-        id={projectRow.type}
-        className="featured-projects-row-header-wrapper"
-      >
+      <Row id={projectRow.type} className="projects-row-header-wrapper">
         <div
           className={`${
             parentComponent !== "Portfolio" ? "text-center w-100" : ""
           }`}
         >
           {parentComponent === "Portfolio" ? (
-            <Link to={`/categories/${projectRow.type}`}>
-              <h4 className="project-row-header">{projectRow.title}</h4>
+            <Link
+              className="serif-link-title"
+              to={`/categories/${projectRow.type}`}
+            >
+              {projectRow.title}
             </Link>
           ) : (
             <React.Fragment>
-              <Link to={`/categories/${projectRow.type}`}>
-                <h4>{projectRow.title}</h4>
+              <Link
+                className="serif-link-title"
+                to={`/categories/${projectRow.type}`}
+              >
+                {projectRow.title}
               </Link>
-              <h6 className="project-row-header">{projectRow.desc}</h6>
+              <h6 className="project-row-header mt-2">{projectRow.desc}</h6>
             </React.Fragment>
           )}
         </div>
       </Row>
       <Row
-        className={`featured-projects-wrapper ${
+        className={`projects-row-projects-wrapper ${
           parentComponent !== "FeaturedProjects" ? "justify-content-start" : ""
         }`}
       >

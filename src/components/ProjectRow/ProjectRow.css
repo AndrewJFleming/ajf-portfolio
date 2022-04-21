@@ -1,20 +1,19 @@
-.featured-projects-row-header-wrapper {
-    margin: 2rem 0;
+.projects-row-header-wrapper {
+    margin: 1rem 0;
   }
   
-  .featured-projects-wrapper {
-  padding-bottom: 1rem;
+  .projects-row-projects-wrapper {
   justify-content: center;
 }
 
-.featured-projects-wrapper:not(:last-child) {
+.projects-row-projects-wrapper:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   }
 
-  .featured-projects-row-header-wrapper a {
+  .projects-row-header-wrapper a {
     text-decoration: underline;
     color: #212529;
   }
-  .featured-projects-row-header-wrapper a:hover {
+  .projects-row-header-wrapper a:hover {
     text-decoration: none;
   }
