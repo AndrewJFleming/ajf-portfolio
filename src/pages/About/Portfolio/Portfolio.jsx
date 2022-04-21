@@ -7,7 +7,7 @@ import ProjectRow from "../../../components/ProjectRow/ProjectRow.jsx";
 const Portfolio = () => {
   return (
     <Container>
-      <h2>All Projects</h2>
+      <h2 className="mt-4">All Projects</h2>
       {projectRows?.map((projectRow) => (
         <ProjectRow projectRow={projectRow} parentComponent="Portfolio" />
       ))}
